@@ -1,0 +1,26 @@
+.animated-hero > div:first-child {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.animated-hero > div > div {
+    flex: 1 1 300px;
+    max-width: 33%;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.animated-hero-image {
+    opacity: 0;
+    transform: translateX(-50px) scale(0.9);
+    animation: slideIn 600ms ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
